@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="assets/output.css">
+        <link rel="stylesheet" href="assets/myStyle.css">
+        <script src="https://kit.fontawesome.com/7f7b6f90d4.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="grid grid-cols-2 ">
+                <div class="navbar hidden md:block px-24 pt-24 ">
+                    <h1 class="text-4xl relative"><a href="#"><span id="name">A</span>tlas</a></h1>
+                    
+                    <div class="flex flex-col pt-32 font-bold">
+                        <ul>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-house mr-4 cursor-pointer"></i><a href="index-portfolio.html" class="active">Home</a></li>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-user mr-4 cursor-pointer"></i><a href="about.html">About</a></li>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-bars mr-4 cursor-pointer" aria-label="menu"></i></i><a href="Services.html">Services</a></li>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-briefcase mr-4 cursor-pointer"></i><a href="Portfolio.html">Portfolio</a></li>
+                            <li ><i class="fa-solid fa-address-book mr-4 cursor-pointer"></i><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-toggler block md:hidden justify-center absolute items-center">
+                    <span></span>
+                </div>
+                <div id="contact" class="contact-section relative pt-20 px-5 top-0  ">
+                    <h2 class="font-semibold mb-14">Contact Me</h2>
+                    <div class="contact">
+ 
+                    <h3 class="text-center text-2xl font-bold">Have You Any Questions?</h3>
+                        <p class="font-semibold text-center">I'M AT YOUR SERVICE</p>
+                    <div class="block  md:grid md:grid-cols-2 lg:grid-cols-4 contact-2 mx-auto mt-4 justify-evenly text-center mb-10">
+                        <div class="call">
+                            <i class="fa-solid fa-phone-flip"></i>
+                            <p class="font-bold">Call us on:</p>
+                            <p>+92 5352967</p>
+                        </div>
+
+                        <div class="office">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="font-bold">Office:</p>
+                            <p>44 Street, Islamabad</p>
+                        </div>
+
+                        <div class="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="font-bold">Email:</p>
+                            <p>info@gmail.com</p>
+                        </div>
+
+                        <div class="Email">
+                            <i class="fa-solid fa-earth-oceania"></i>
+                            <p class="font-bold">Website:</p>
+                            <p>mo-designer.com</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="email my-8">
+                    <h3 class="text-center font-bold text-2xl">SEND ME AN EMAIL</h3>
+                    <p class="font-semibold text-center mb-8" >I'M VERY RESPONSIVE TO MESSAGES</p>
+                    <div class="block md:flex mx-auto justify-center">
+                        <input type="text" placeholder="Name" class=" w-full md:w-1/2  border-2 border-gray-300 rounded-full px-4 py-2 mr-8">
+                        <input type="email" placeholder="Email" class="w-full md:w-1/2 border-2 border-gray-300 rounded-full px-4 py-2">
+                    </div>
+                    <div class="email-subject  mt-4">
+                        <input type="email" placeholder="Email" class="w-full border-2 border-gray-300 rounded-full px-4 py-2">
+                        <textarea placeholder="Message" rows="4" class="rounded-lg px-4 py-2 mb-5 bg-transparent w-full border-2 mt-5  border-gray-300"></textarea>
+                        <button class="px-4 py-3 text-left rounded-full text-white">Send Message</button>
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

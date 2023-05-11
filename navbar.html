@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>navbar</title>
+        <link rel="stylesheet" href="assets/output.css">
+        <link rel="stylesheet" href="assets/myStyle.css">
+        <script src="https://kit.fontawesome.com/7f7b6f90d4.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            .hide{
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbar" class="flex flex-col pt-32 font-bold">
+            <ul>
+                <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-house mr-4 cursor-pointer"></i><a href="index-portfolio.html" class="active">Home</a></li>
+                <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-user mr-4 cursor-pointer"></i><a href="about.html">About</a></li>
+                <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-bars mr-4 cursor-pointer" aria-label="menu"></i></i><a href="#services">Services</a></li>
+                <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-briefcase mr-4 cursor-pointer"></i><a href="Portfolio.html">Portfolio</a></li>
+                <li ><i class="fa-solid fa-address-book mr-4 cursor-pointer"></i><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button onclick="show()"><i class="fa-solid fa-bars"></i></button>
+        <script>
+            let flex = document.getElementById('navbar');
+            function show(){
+                flex.classList.toggle('hide');
+            }
+        </script>
+    </body>
+</html>
