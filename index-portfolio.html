@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="assets/output.css">
+        <link rel="stylesheet" href="assets/myStyle.css">
+        <script src="https://kit.fontawesome.com/7f7b6f90d4.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            .hide{
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-toggler block md:hidden justify-center absolute items-center">
+            <button onclick="show()"><span ></span></button>
+        </div>
+
+        <div id="navbar" class="navbar-dropdown px-14 pt-10 ">
+            <h1 class="text-4xl relative"><a href="#"><span id="name">A</span>tlas</a></h1>
+            
+            <div  class="flex flex-col pt-20 font-bold">
+                <ul>
+                    <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-house mr-4 cursor-pointer"></i><a href="index-portfolio.html" class="active">Home</a></li>
+                    <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-user mr-4 cursor-pointer"></i><a href="about.html">About</a></li>
+                    <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-bars mr-4 cursor-pointer" aria-label="menu"></i></i><a href="#services">Services</a></li>
+                    <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-briefcase mr-4 cursor-pointer"></i><a href="Portfolio.html">Portfolio</a></li>
+                    <li ><i class="fa-solid fa-address-book mr-4 cursor-pointer"></i><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid grid-cols-2">            
+                <div  class="navbar hidden md:block px-24 pt-24">
+                    <h1 class="text-4xl relative"><a href="#"><span id="name">A</span>tlas</a></h1>
+                   
+                    <div class="flex flex-col pt-32 font-bold">
+                        <ul>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-house mr-4 cursor-pointer active"></i><a href="#home" class="active">Home</a></li>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-user mr-4 cursor-pointer"></i><a href="about.html">About</a></li>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-bars mr-4 cursor-pointer" aria-label="menu"></i></i><a href="Services.html">Services</a></li>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-briefcase mr-4 cursor-pointer"></i><a href="Portfolio.html">Portfolio</a></li>
+                            <li ><i class="fa-solid fa-address-book mr-4 cursor-pointer"></i><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="home" class="right-section block lg:grid pt-96 lg:pt-0   px-5  justify-center h-screen align-middle items-center  grid-cols-1 md:grid-cols-2 ">
+                    <div class="description w-full ">
+                        <h1 class="font-semibold text-2xl">Hello, my name is <span id="Alimi-Mousaad" class=" text-4xl font-semibold">Alimi Mousaad</span></h1>
+                        <h1 class="font-semibold text-2xl">I'm a <span class="profession font-semibold">web Designer</span></h1>
+                        <p class="mb-16 mt-4 paragraph w-full lg:w-2/3">I'm a web designer with extensive experience for over 10 years. My expertise is to  create websites, graphics and many more...</p>
+                        <button class="btn text-white rounded-full px-4 py-2">
+                            More about me
+                        </button>
+                    </div>
+                    <div class="hero hidden lg:block w-full mx-14">
+                        <img src="assets/images/hero.jpg " class="w-2/4 rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let nav = document.getElementById('navbar');
+            function show(){
+                nav.classList.toggle('hide');
+            }
+        </script>
+    </body>
+</html>
