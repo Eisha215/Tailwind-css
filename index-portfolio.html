@@ -13,15 +13,14 @@
         </style>
     </head>
     <body>
-        <div class="nav-toggler block md:hidden justify-center absolute items-center">
-            <button onclick="show()"><span ></span></button>
+        <div class="nav-toggler block md:hidden justify-center absolute items-center" onclick="toggleMenu()">
+           <span></span>
         </div>
-
         <div id="navbar" class="navbar-dropdown px-14 pt-10 ">
             <h1 class="text-4xl relative"><a href="#"><span id="name">A</span>tlas</a></h1>
             
-            <div  class="flex flex-col pt-20 font-bold">
-                <ul>
+            <div class="flex flex-col pt-20 font-bold">
+                <ul class="list-z-index">
                     <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-house mr-4 cursor-pointer"></i><a href="index-portfolio.html" class="active">Home</a></li>
                     <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-user mr-4 cursor-pointer"></i><a href="about.html">About</a></li>
                     <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-bars mr-4 cursor-pointer" aria-label="menu"></i></i><a href="#services">Services</a></li>
@@ -49,7 +48,7 @@
                 <div id="home" class="right-section block lg:grid pt-96 lg:pt-0   px-5  justify-center h-screen align-middle items-center  grid-cols-1 md:grid-cols-2 ">
                     <div class="description w-full ">
                         <h1 class="font-semibold text-2xl">Hello, my name is <span id="Alimi-Mousaad" class=" text-4xl font-semibold">Alimi Mousaad</span></h1>
-                        <h1 class="font-semibold text-2xl">I'm a <span class="profession font-semibold">web Designer</span></h1>
+                        <h1 class="font-semibold text-2xl">I'm a <span onclick="toggleMenu()" class="profession font-semibold">web Designer</span></h1>
                         <p class="mb-16 mt-4 paragraph w-full lg:w-2/3">I'm a web designer with extensive experience for over 10 years. My expertise is to  create websites, graphics and many more...</p>
                         <button class="btn text-white rounded-full px-4 py-2">
                             More about me
@@ -63,7 +62,7 @@
         </div>
         <script>
             let nav = document.getElementById('navbar');
-            function show(){
+            function toggleMenu(){
                 nav.classList.toggle('hide');
             }
         </script>
