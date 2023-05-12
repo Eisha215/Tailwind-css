@@ -33,7 +33,12 @@ body{
     top:20px;
     position: fixed;
     border-radius: 5px;
+    z-index: 11;
     
+}
+.list-z-index{
+    z-index: 111;
+    background-color: white;
 }
 .nav-toggler span{
     width:1.5rem;
@@ -259,17 +264,16 @@ ul li{
 
 }
 
-.circle-dot{
+.circle-dot,.circle-dott{
     background-color: var(--skin-color);
 }
 
-.experience1::before{
+.experiencee::before{
     content: '';
     width:1px;
     height: 90%;
     position: absolute;
-    left:1.25em;
-    top:2.5em;
+    left:33em;
     background-color: var(--skin-color);
 
 }
@@ -421,6 +425,20 @@ ul li{
     }
     .right-section,.about-section,.services-section,.portfolio-section,.contact-section,.experience{
         background-color: transparent;
+    }
+    .education1::before{
+        left:9em;
+        height: 70%;    }
+    .circle-dot{
+        left:8.5em;
+        
+    }
+    .circle-dott{
+        left:0.85em;
+    }
+    .experiencee{
+        position: relative;
+        left:7.75em;
     }
     
 
