@@ -23,6 +23,10 @@ body{
 
 }
 
+.list-z-index{
+    z-index: 111;
+}
+
 .nav-toggler{
     height:40px;
     width:45px;
@@ -34,7 +38,6 @@ body{
     position: fixed;
     border-radius: 5px;
     z-index: 11;
-    
 }
 .list-z-index{
     z-index: 111;
